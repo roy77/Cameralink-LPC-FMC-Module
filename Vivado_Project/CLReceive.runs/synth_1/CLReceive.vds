@@ -1,0 +1,398 @@
+#-----------------------------------------------------------
+# Vivado v2014.4
+# SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Mar  4 21:20:15 2015
+# Process ID: 3739
+# Log file: /root/Cameralink/Vivado/CLReceive.runs/synth_1/CLReceive.vds
+# Journal file: /root/Cameralink/Vivado/CLReceive.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source CLReceive.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /root/Cameralink/Vivado/CLReceive.cache/wt [current_project]
+# set_property parent.project_path /root/Cameralink/Vivado/CLReceive.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths {
+#   /root/Cameralink/Vivado/CLReceive
+#   /root/Cameralink/Vivado/CLSend
+# } [current_project]
+# read_vhdl -library xil_defaultlib {
+#   /root/Cameralink/Vivado/CLReceive/hdl/FreqCalc.vhd
+#   /root/Cameralink/Vivado/CLReceive/hdl/CLReceive_S00_AXI.vhd
+#   /root/Cameralink/Vivado/CLReceive/hdl/CLReceive_M00_AXIS.vhd
+#   /root/Cameralink/Vivado/CLReceive/hdl/CLReceive.vhd
+# }
+# catch { write_hwdef -file CLReceive.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top CLReceive -part xc7z020clg484-1
+Command: synth_design -top CLReceive -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 601.797 ; gain = 68.250 ; free physical = 606 ; free virtual = 0
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CLReceive' [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive.vhd:73]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'CLReceive_S00_AXI' declared at '/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_S00_AXI.vhd:10' bound to instance 'CLReceive_S00_AXI_inst' of component 'CLReceive_S00_AXI' [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'CLReceive_S00_AXI__parameterized0' [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_S00_AXI.vhd:97]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_S00_AXI.vhd:245]
+INFO: [Synth 8-226] default block is never used [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_S00_AXI.vhd:418]
+WARNING: [Synth 8-614] signal 'Counter' is read in the process but is not in the sensitivity list [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_S00_AXI.vhd:410]
+WARNING: [Synth 8-614] signal 'DATA_O' is read in the process but is not in the sensitivity list [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_S00_AXI.vhd:410]
+INFO: [Synth 8-638] synthesizing module 'FreqCalc' [/root/Cameralink/Vivado/CLReceive/hdl/FreqCalc.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'FreqCalc' (1#1) [/root/Cameralink/Vivado/CLReceive/hdl/FreqCalc.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'CLReceive_S00_AXI__parameterized0' (2#1) [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_S00_AXI.vhd:97]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'CLReceive_M00_AXIS' declared at '/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_M00_AXIS.vhd:7' bound to instance 'CLReceive_M00_AXIS_inst' of component 'CLReceive_M00_AXIS' [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'CLReceive_M00_AXIS__parameterized0' [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_M00_AXIS.vhd:45]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CLReceive_M00_AXIS__parameterized0' (3#1) [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_M00_AXIS.vhd:45]
+WARNING: [Synth 8-3848] Net SER_OUT in module/entity CLReceive does not have driver. [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'CLReceive' (4#1) [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive.vhd:73]
+WARNING: [Synth 8-3331] design CLReceive has unconnected port SER_OUT
+WARNING: [Synth 8-3331] design CLReceive has unconnected port SER_IN
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 628.789 ; gain = 95.242 ; free physical = 572 ; free virtual = 0
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 628.789 ; gain = 95.242 ; free physical = 571 ; free virtual = 0
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 636.789 ; gain = 103.242 ; free physical = 571 ; free virtual = 0
+---------------------------------------------------------------------------------
+ROM "STOP" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+WARNING: [Synth 8-327] inferring latch for variable 'slv_reg3_written_reg' [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive_S00_AXI.vhd:507]
+WARNING: [Synth 8-3848] Net SER_OUT in module/entity CLReceive does not have driver. [/root/Cameralink/Vivado/CLReceive/hdl/CLReceive.vhd:29]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 644.805 ; gain = 111.258 ; free physical = 558 ; free virtual = 0
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 7     
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   8 Input     32 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 8     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 27    
+	   2 Input      1 Bit        Muxes := 21    
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CLReceive 
+Detailed RTL Component Info : 
+Module FreqCalc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module CLReceive_S00_AXI__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   8 Input     32 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 27    
+	   2 Input      1 Bit        Muxes := 18    
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module CLReceive_M00_AXIS__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Loading clock regions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from /opt/Xilinx/Vivado/2014.4/data/./parts/xilinx/zynq/IOStandards.xml
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 721.801 ; gain = 188.254 ; free physical = 486 ; free virtual = 0
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "FREQ_CALC/STOP" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+WARNING: [Synth 8-3331] design CLReceive has unconnected port SER_OUT
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tdata[31] driven by constant 0
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tdata[30] driven by constant 0
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tdata[29] driven by constant 0
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tdata[28] driven by constant 0
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tdata[27] driven by constant 0
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tdata[26] driven by constant 0
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tdata[25] driven by constant 0
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tdata[24] driven by constant 0
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tstrb[3] driven by constant 1
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tstrb[2] driven by constant 1
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tstrb[1] driven by constant 1
+WARNING: [Synth 8-3917] design CLReceive has port m00_axis_tstrb[0] driven by constant 1
+WARNING: [Synth 8-3331] design CLReceive has unconnected port SER_IN
+WARNING: [Synth 8-3331] design CLReceive has unconnected port m00_axis_tready
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 721.801 ; gain = 188.254 ; free physical = 481 ; free virtual = 0
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 721.801 ; gain = 188.254 ; free physical = 481 ; free virtual = 0
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CLReceive_M00_AXIS_inst/axis_tlast_delay_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CLReceive_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CLReceive_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (\CLReceive_S00_AXI_inst/axi_bresp_reg[1] ) is unused and will be removed from module CLReceive.
+WARNING: [Synth 8-3332] Sequential element (\CLReceive_S00_AXI_inst/axi_bresp_reg[0] ) is unused and will be removed from module CLReceive.
+WARNING: [Synth 8-3332] Sequential element (\CLReceive_S00_AXI_inst/axi_awaddr_reg[1] ) is unused and will be removed from module CLReceive.
+WARNING: [Synth 8-3332] Sequential element (\CLReceive_S00_AXI_inst/axi_awaddr_reg[0] ) is unused and will be removed from module CLReceive.
+WARNING: [Synth 8-3332] Sequential element (\CLReceive_S00_AXI_inst/axi_araddr_reg[1] ) is unused and will be removed from module CLReceive.
+WARNING: [Synth 8-3332] Sequential element (\CLReceive_S00_AXI_inst/axi_araddr_reg[0] ) is unused and will be removed from module CLReceive.
+WARNING: [Synth 8-3332] Sequential element (\CLReceive_S00_AXI_inst/axi_rresp_reg[1] ) is unused and will be removed from module CLReceive.
+WARNING: [Synth 8-3332] Sequential element (\CLReceive_S00_AXI_inst/axi_rresp_reg[0] ) is unused and will be removed from module CLReceive.
+WARNING: [Synth 8-3332] Sequential element (\CLReceive_M00_AXIS_inst/axis_tlast_delay_reg ) is unused and will be removed from module CLReceive.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 454 ; free virtual = 0
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 454 ; free virtual = 0
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 454 ; free virtual = 0
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 454 ; free virtual = 0
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 454 ; free virtual = 0
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 453 ; free virtual = 0
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 453 ; free virtual = 0
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 453 ; free virtual = 0
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 453 ; free virtual = 0
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    85|
+|3     |INV    |     2|
+|4     |LUT1   |   179|
+|5     |LUT2   |   106|
+|6     |LUT3   |    85|
+|7     |LUT4   |   163|
+|8     |LUT5   |    92|
+|9     |LUT6   |   123|
+|10    |FDCE   |    52|
+|11    |FDPE   |     2|
+|12    |FDRE   |   404|
+|13    |FDSE   |     7|
+|14    |LDC    |     1|
+|15    |IBUF   |    83|
+|16    |OBUF   |    91|
+|17    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+-----------------------------------+------+
+|      |Instance                  |Module                             |Cells |
++------+--------------------------+-----------------------------------+------+
+|1     |top                       |                                   |  1479|
+|2     |  CLReceive_M00_AXIS_inst |CLReceive_M00_AXIS__parameterized0 |    19|
+|3     |  CLReceive_S00_AXI_inst  |CLReceive_S00_AXI__parameterized0  |  1265|
+|4     |    FREQ_CALC             |FreqCalc                           |   244|
++------+--------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 453 ; free virtual = 0
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 745.840 ; gain = 170.039 ; free physical = 453 ; free virtual = 0
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.840 ; gain = 212.293 ; free physical = 453 ; free virtual = 0
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 169 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 135 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 775.848 ; gain = 200.047 ; free physical = 422 ; free virtual = 0
+# write_checkpoint -noxdef CLReceive.dcp
+# catch { report_utilization -file CLReceive_utilization_synth.rpt -pb CLReceive_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 775.848 ; gain = 0.000 ; free physical = 422 ; free virtual = 0
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 21:20:31 2015...

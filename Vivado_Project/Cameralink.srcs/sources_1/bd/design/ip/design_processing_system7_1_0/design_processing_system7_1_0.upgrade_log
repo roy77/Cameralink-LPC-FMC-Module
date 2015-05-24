@@ -1,0 +1,212 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3 (lin32) Build 1034051 Fri Oct  3 16:34:07 MDT 2014
+| Date         : Sat Oct 18 12:54:39 2014
+| Host         : roy-virtual-machine running 32-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_processing_system7_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_processing_system7_1_0 from xilinx.com:ip:processing_system7:5.4 (Rev. 1) to xilinx.com:ip:processing_system7:5.5
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Warnings
+-----------
+
+WARNING: 1. The custom time stamp unit(PTP) signals will be exposed to the Programmable Logic(PL),  
+  even when the Ethernet is routed through the MIO. For more details 
+,  please refer Zynq Technical Reference Manual (UG 585) CH No. 16.4 IEEE 1588 Time Stamping. 
+ This change enables additional optional functionality for designs with Ethernet on MIO. 
+ No changes are required for existing designs. 
+  2. Updated the JTAG interface from master to slave mode. Based on Zynq Technical Reference Manual, 
+  PS boot mode supports 4 master boot mode and 2 Slave JTAG Boot mode. Prior versions of Zynq PS7 
+  IP had PL JTAG in master mode incorrectly. The JTAG port TDO will have a buffer (OBUFT) 
+  instantiated as part of the Processing System7 IP. This change only affects designs which use PL JTAG 
+  through EMIO interface. For More details, refer chapter no.6 of Zynq Technical Reference Manual 
+  (UG 585) - Boot and Configuration. 
+
+
+3. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'design_processing_system7_1_0'.
+
+
+-upgraded interface 'PJTAG' (xilinx.com:interface:jtag:2.0) differs from original interface xilinx.com:interface:jtag:1.0
+
+4. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'design_processing_system7_1_0'. These changes may impact your design.
+
+
+-upgrade has added port 'ENET0_PTP_DELAY_REQ_RX'
+-upgrade has added port 'ENET0_PTP_DELAY_REQ_TX'
+-upgrade has added port 'ENET0_PTP_PDELAY_REQ_RX'
+-upgrade has added port 'ENET0_PTP_PDELAY_REQ_TX'
+-upgrade has added port 'ENET0_PTP_PDELAY_RESP_RX'
+-upgrade has added port 'ENET0_PTP_PDELAY_RESP_TX'
+-upgrade has added port 'ENET0_PTP_SYNC_FRAME_RX'
+-upgrade has added port 'ENET0_PTP_SYNC_FRAME_TX'
+-upgrade has added port 'ENET0_SOF_RX'
+-upgrade has added port 'ENET0_SOF_TX'
+
+5. Upgrade messages
+-------------------
+
+Added parameter PCW_TRACE_INTERNAL_WIDTH with value 32
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (lin32) Build 932637 Wed Jun 11 13:12:44 MDT 2014
+| Date         : Mon Aug 11 22:10:26 2014
+| Host         : roy-virtual-machine running 32-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_processing_system7_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_processing_system7_1_0 from xilinx.com:ip:processing_system7:5.3 (Rev. 1) to xilinx.com:ip:processing_system7:5.4 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'design_processing_system7_1_0'.
+
+
+-upgrade has added interface 'TRIGGER_IN_0'
+-upgrade has added interface 'TRIGGER_IN_1'
+-upgrade has added interface 'TRIGGER_IN_2'
+-upgrade has added interface 'TRIGGER_IN_3'
+-upgrade has added interface 'TRIGGER_OUT_0'
+-upgrade has added interface 'TRIGGER_OUT_1'
+-upgrade has added interface 'TRIGGER_OUT_2'
+-upgrade has added interface 'TRIGGER_OUT_3'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'design_processing_system7_1_0'. These changes may impact your design.
+
+
+-upgrade has removed port 'TTC0_CLK0_IN'
+-upgrade has removed port 'TTC0_CLK1_IN'
+-upgrade has removed port 'TTC0_CLK2_IN'
+
+4. Upgrade messages
+-------------------
+
+Added parameter PCW_DDR_PRIORITY_WRITEPORT_0 with value Low
+Added parameter PCW_DDR_PRIORITY_WRITEPORT_1 with value Low
+Added parameter PCW_DDR_PRIORITY_WRITEPORT_2 with value Low
+Added parameter PCW_DDR_PRIORITY_WRITEPORT_3 with value Low
+Added parameter PCW_DDR_PRIORITY_READPORT_0 with value Low
+Added parameter PCW_DDR_PRIORITY_READPORT_1 with value Low
+Added parameter PCW_DDR_PRIORITY_READPORT_2 with value Low
+Added parameter PCW_DDR_PRIORITY_READPORT_3 with value Low
+Added parameter PCW_DDR_PORT0_HPR_ENABLE with value 0
+Added parameter PCW_DDR_PORT1_HPR_ENABLE with value 0
+Added parameter PCW_DDR_PORT2_HPR_ENABLE with value 0
+Added parameter PCW_DDR_PORT3_HPR_ENABLE with value 0
+Added parameter PCW_DDR_HPRLPR_QUEUE_PARTITION with value HPR(0)/LPR(32)
+Added parameter PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL with value 2
+Added parameter PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL with value 15
+Added parameter PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL with value 2
+Added parameter PCW_UIPARAM_DDR_ADV_ENABLE with value 0
+Added parameter PCW_FTM_CTI_IN0 with value DISABLED
+Added parameter PCW_FTM_CTI_IN1 with value DISABLED
+Added parameter PCW_FTM_CTI_IN2 with value DISABLED
+Added parameter PCW_FTM_CTI_IN3 with value DISABLED
+Added parameter PCW_FTM_CTI_OUT0 with value DISABLED
+Added parameter PCW_FTM_CTI_OUT1 with value DISABLED
+Added parameter PCW_FTM_CTI_OUT2 with value DISABLED
+Added parameter PCW_FTM_CTI_OUT3 with value DISABLED
+Added parameter PCW_IRQ_F2P_MODE with value REVERSE
+Added parameter PCW_USB_RESET_POLARITY with value Active Low
+Added parameter PCW_ENET_RESET_POLARITY with value Active Low
+Added parameter PCW_I2C_RESET_POLARITY with value Active Low
+Added parameter PCW_DCI_PERIPHERAL_CLKSRC with value 1
+Added parameter PCW_PCAP_PERIPHERAL_CLKSRC with value 1
+Added parameter PCW_CPU_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_DDR_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_SMC_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_QSPI_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_SDIO_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_UART_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_SPI_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_FCLK0_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_FCLK1_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_FCLK2_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_FCLK3_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_FCLK0_PERIPHERAL_DIVISOR1 with value 1
+Added parameter PCW_FCLK1_PERIPHERAL_DIVISOR1 with value 1
+Added parameter PCW_FCLK2_PERIPHERAL_DIVISOR1 with value 1
+Added parameter PCW_FCLK3_PERIPHERAL_DIVISOR1 with value 1
+Added parameter PCW_ENET0_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_ENET1_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_ENET0_PERIPHERAL_DIVISOR1 with value 1
+Added parameter PCW_ENET1_PERIPHERAL_DIVISOR1 with value 1
+Added parameter PCW_CAN_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_CAN_PERIPHERAL_DIVISOR1 with value 1
+Added parameter PCW_TPIU_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_DCI_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_DCI_PERIPHERAL_DIVISOR1 with value 1
+Added parameter PCW_PCAP_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_TTC0_CLK0_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_TTC0_CLK1_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_TTC0_CLK2_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_TTC1_CLK0_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_TTC1_CLK1_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_TTC1_CLK2_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_OVERRIDE_BASIC_CLOCK with value 0
+Added parameter PCW_WDT_PERIPHERAL_DIVISOR0 with value 1
+Added parameter PCW_ARMPLL_CTRL_FBDIV with value 1
+Added parameter PCW_IOPLL_CTRL_FBDIV with value 1
+Added parameter PCW_DDRPLL_CTRL_FBDIV with value 1
+Added parameter PCW_USE_CORESIGHT with value 0
+Removed parameter PCW_USE_DAP_ROM
+Added parameter PCW_TRACE_PIPELINE_WIDTH with value 8
+
+
+
+
+
+
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (lin32) Build 353583 Mon Dec  9 17:25:33 MST 2013
+| Date         : Wed Jan 22 19:41:29 2014
+| Host         : roy-virtual-machine running 32-bit Ubuntu 13.04
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_processing_system7_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_processing_system7_1_0 from xilinx.com:ip:processing_system7:5.2 to xilinx.com:ip:processing_system7:5.3 (Rev. 1)
+
+2. Upgrade messages
+-------------------
+
+Added parameter preset with value None
+

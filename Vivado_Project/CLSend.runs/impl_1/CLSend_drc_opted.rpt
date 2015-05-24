@@ -1,0 +1,71 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin32) Build 1071353 Tue Nov 18 16:37:30 MST 2014
+| Date         : Mon Feb 23 20:34:09 2015
+| Host         : roy-virtual-machine running 32-bit Ubuntu 14.04.1 LTS
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 6
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+160 out of 160 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: TEST_I[7:0], CC[3:0], DATA_O[27:0], s00_axi_awaddr[4], s00_axi_awaddr[3], s00_axi_awaddr[2], s00_axi_wdata[31:0], s00_axi_wstrb[3:0], s00_axi_bresp[1:0], s00_axi_araddr[4], s00_axi_araddr[3], s00_axi_araddr[2], s00_axi_rdata[31:0], s00_axi_rresp[1:0], s00_axis_tdata[23] (the first 15 of 56 listed).
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+160 out of 160 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: TEST_I[7:0], CC[3:0], DATA_O[27:0], s00_axi_awaddr[4], s00_axi_awaddr[3], s00_axi_awaddr[2], s00_axi_wdata[31:0], s00_axi_wstrb[3:0], s00_axi_bresp[1:0], s00_axi_araddr[4], s00_axi_araddr[3], s00_axi_araddr[2], s00_axi_rdata[31:0], s00_axi_rresp[1:0], s00_axis_tdata[23] (the first 15 of 56 listed).
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has direct IO Driver  
+Clock net CLK_READ_IBUF is directly driven by an IO rather than a Clock Buffer. Driver(s): CLK_READ_IBUF_inst/O2000
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT n_0_137_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
+    CLSend_S00_AXI_inst/CCCounter_reg[30] {LDCE}
+    CLSend_S00_AXI_inst/CCCounter_reg[31] {LDCE}
+    CLSend_S00_AXI_inst/CCCounter_reg[3] {LDCE}
+    CLSend_S00_AXI_inst/CCCounter_reg[4] {LDCE}
+    CLSend_S00_AXI_inst/CCCounter_reg[5] {LDCE}
+
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

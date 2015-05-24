@@ -1,0 +1,52 @@
+{
+   commentid: "",
+   guistr: "# # String gsaved with Nlview 6.4.10  2014-10-02 bk=1.3207 VDI=35 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 80 -defaultsOSRD
+preplace port G_SERTC -pg 1 -y 500 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 100 -defaultsOSRD
+preplace port G_SERFC -pg 1 -y 540 -defaultsOSRD
+preplace port O2_CLK -pg 1 -y 380 -defaultsOSRD
+preplace portBus O2_D -pg 1 -y 520 -defaultsOSRD
+preplace portBus O2_CC -pg 1 -y 480 -defaultsOSRD
+preplace portBus LED -pg 1 -y 520 -defaultsOSRD
+preplace portBus SW -pg 1 -y 560 -defaultsOSRD
+preplace inst axis_data_fifo_1 -pg 1 -lvl 2 -y 430 -defaultsOSRD
+preplace inst processing_system7_1 -pg 1 -lvl 5 -y 170 -defaultsOSRD
+preplace inst processing_system7_1_axi_periph -pg 1 -lvl 2 -y 170 -defaultsOSRD
+preplace inst axi_mem_intercon_1 -pg 1 -lvl 4 -y 110 -defaultsOSRD
+preplace inst axi_dma_2 -pg 1 -lvl 3 -y 200 -defaultsOSRD
+preplace inst CLReceive_0 -pg 1 -lvl 5 -y 490 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y 300 -defaultsOSRD
+preplace inst proc_sys_reset1 -pg 1 -lvl 1 -y 420 -defaultsOSRD
+preplace inst proc_sys_reset -pg 1 -lvl 1 -y 210 -defaultsOSRD
+preplace netloc processing_system7_1_ddr 1 5 1 N
+preplace netloc processing_system7_1_axi_periph_M01_AXI 1 2 3 870 460 NJ 460 NJ
+preplace netloc CLReceive_0_LED 1 5 1 N
+preplace netloc O2_D_1 1 0 5 NJ 520 NJ 530 NJ 530 NJ 530 1580
+preplace netloc proc_sys_reset_interconnect_aresetn 1 1 3 500 20 NJ 90 NJ
+preplace netloc axi_dma_2_s2mm_introut 1 3 1 1240
+preplace netloc processing_system7_1_fclk_clk0 1 0 6 150 120 520 310 860 80 1270 250 1600 350 2090
+preplace netloc proc_sys_reset_peripheral_aresetn 1 1 4 530 320 880 100 1250 570 NJ
+preplace netloc processing_system7_1_axi_periph_M00_AXI 1 2 1 N
+preplace netloc G_SERFC_1 1 0 5 NJ 540 NJ 540 NJ 540 NJ 540 1610
+preplace netloc axi_dma_2_M_AXI_S2MM 1 3 1 1240
+preplace netloc processing_system7_1_fixed_io 1 5 1 N
+preplace netloc CLReceive_0_M00_AXIS 1 1 5 540 340 NJ 350 NJ 350 NJ 340 2080
+preplace netloc processing_system7_1_fclk_reset0_n 1 0 6 150 320 NJ 330 NJ 290 NJ 240 NJ 330 2080
+preplace netloc axi_mem_intercon_1_m00_axi 1 4 1 1580
+preplace netloc processing_system7_1_m_axi_gp0 1 1 5 530 30 NJ 110 NJ 230 NJ 10 2090
+preplace netloc xlconcat_0_dout 1 4 1 1580
+preplace netloc CLReceive_0_SER_OUT 1 5 1 N
+preplace netloc CLReceive_0_CC 1 5 1 N
+preplace netloc proc_sys_reset1_peripheral_aresetn 1 1 4 510 550 NJ 550 NJ 550 1630
+preplace netloc axis_data_fifo_1_M_AXIS 1 2 1 890
+preplace netloc SW_1 1 0 5 NJ 560 NJ 560 NJ 560 NJ 560 1590
+preplace netloc O2_CLK_1 1 0 5 140 330 500 520 NJ 450 NJ 450 1620
+levelinfo -pg 1 120 320 700 1070 1420 1860 2110
+",
+}
+{
+   da_axi4_cnt: "6",
+   da_board_cnt: "2",
+}

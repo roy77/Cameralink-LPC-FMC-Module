@@ -1,0 +1,12 @@
+12:51:54 INFO  : Processing command line option -hwspec /root/Cameralink/Vivado/Cameralink.sdk/design_wrapper.hdf.
+12:53:24 INFO  : Saving repository preferences.
+12:53:24 INFO  : Reading in cores from global repositories: 
+		 /root/Boot/DeviceTree/DeviceTreeGenerator
+12:53:25 INFO  : Cleaning BSP projects in the workspace.
+12:53:27 INFO  : Saving repository preferences.
+12:53:44 INFO  : 'device_tree' is a board support package for an OS for which applications cannot be developed within SDK.
+12:53:44 INFO  : You can configure and build project 'device_tree_bsp_0' within SDK at will, but have to export it into the appropriate third party environment to develop applications.
+14:37:53 INFO  : Processing command line option -hwspec /root/Cameralink/Vivado/Cameralink.sdk/design_wrapper.hdf.
+14:37:54 INFO  : Checking for hwspec changes in the project design_wrapper_hw_platform_0.
+14:37:54 INFO  : Restoring global repository preferences: 
+		 /root/Boot/DeviceTree/DeviceTreeGenerator

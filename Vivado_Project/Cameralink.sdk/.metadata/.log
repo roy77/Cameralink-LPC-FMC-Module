@@ -1,0 +1,9 @@
+!SESSION 2014-08-13 12:51:42.189 -----------------------------------------------
+eclipse.buildId=2014.2
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /root/Cameralink/Vivado/Cameralink.sdk
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-08-13 12:53:45.764
+!MESSAGE Indexed 'device_tree_bsp_0' (0 sources, 0 headers) in 0.01 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)

@@ -1,0 +1,9 @@
+#
+# Vivado(TM)
+# htr.txt: a Vivado-generated description of how-to-repeat the
+#          the basic steps of a run.  Note that runme.bat/sh needs
+#          to be invoked for Vivado to track run status.
+# Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+#
+
+vivado -log CLReceive.vdi -applog -m32 -messageDb vivado.pb -mode batch -source CLReceive.tcl -notrace

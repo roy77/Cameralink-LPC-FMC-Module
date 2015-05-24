@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4
+# SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Feb 23 20:15:16 2015
+# Process ID: 4997
+# Log file: /root/Cameralink/Vivado/CLSend.runs/impl_1/CLSend.vdi
+# Journal file: /root/Cameralink/Vivado/CLSend.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source CLSend.tcl -notrace

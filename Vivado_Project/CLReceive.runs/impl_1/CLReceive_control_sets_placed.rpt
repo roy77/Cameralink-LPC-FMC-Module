@@ -1,0 +1,89 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin32) Build 1071353 Tue Nov 18 16:37:30 MST 2014
+| Date         : Wed Mar  4 21:20:58 2015
+| Host         : roy-virtual-machine running 32-bit Ubuntu 14.04.1 LTS
+| Command      : report_control_sets -verbose -file CLReceive_control_sets_placed.rpt
+| Design       : CLReceive
+| Device       : xc7z020
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    36 |
+| Minimum Number of register sites lost to control set restrictions |    54 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            8 |
+| No           | No                    | Yes                    |              34 |           10 |
+| No           | Yes                   | No                     |               7 |            3 |
+| Yes          | No                    | No                     |              32 |           10 |
+| Yes          | No                    | Yes                    |              20 |            6 |
+| Yes          | Yes                   | No                     |             363 |          112 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+---------------------------------------------------+------------------------------------------------+------------------+----------------+
+|                 Clock Signal                 |                   Enable Signal                   |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++----------------------------------------------+---------------------------------------------------+------------------------------------------------+------------------+----------------+
+|  CLReceive_S00_AXI_inst/n_0_slv_reg3_set_reg |                                                   | CLReceive_S00_AXI_inst/slv_reg3_reset          |                1 |              1 |
+|  m00_axis_aclk_IBUF_BUFG                     |                                                   |                                                |                1 |              1 |
+| ~CLK_O_IBUF_BUFG                             |                                                   |                                                |                3 |              3 |
+| ~CLK_O_IBUF_BUFG                             | CLReceive_S00_AXI_inst/n_0_CC[3]_i_2              | CLReceive_S00_AXI_inst/n_0_CC[3]_i_1           |                2 |              4 |
+|  s00_axi_aclk_IBUF_BUFG                      |                                                   |                                                |                4 |              6 |
+|  CLK_O_IBUF_BUFG                             | CLReceive_M00_AXIS_inst/n_0_LED[6]_i_2            | CLReceive_M00_AXIS_inst/n_0_LED[6]_i_1         |                2 |              7 |
+|  s00_axi_aclk_IBUF_BUFG                      |                                                   | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                3 |              7 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg0[23]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg0[7]_i_1        | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg0[31]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg1[7]_i_1        | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg1[15]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg1[31]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                4 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg1[23]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                3 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg2[15]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg2[23]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                3 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg2[31]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                3 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg3[7]_i_1        | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                4 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg3[15]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                3 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg3[23]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg3[31]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                1 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg0[15]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg2[7]_i_1        | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg4[31]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                3 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg4[23]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                1 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg4[7]_i_1        | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                3 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_slv_reg4[15]_i_1       | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/FREQ_CALC/CLK_Ref_CNT0     | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                6 |             20 |
+| ~CLK_O_IBUF_BUFG                             | CLReceive_S00_AXI_inst/n_0_loops[21]_i_1          | CLReceive_S00_AXI_inst/n_0_CCHighTicks[15]_i_1 |                8 |             22 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/n_0_axi_rdata[31]_i_1      | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |               11 |             32 |
+|  CLK_O_IBUF_BUFG                             | CLReceive_S00_AXI_inst/Counter0                   | CLReceive_S00_AXI_inst/FREQ_CALC/O1            |                8 |             32 |
+|  s00_axi_aclk_IBUF_BUFG                      | CLReceive_S00_AXI_inst/FREQ_CALC/CLK_Measure_OUT0 |                                                |               10 |             32 |
+| ~CLK_O_IBUF_BUFG                             | CLReceive_S00_AXI_inst/n_0_CCCounter2[0]_i_2      | CLReceive_S00_AXI_inst/n_0_CCCounter2[0]_i_1   |                9 |             33 |
+| ~CLK_O_IBUF_BUFG                             | CLReceive_S00_AXI_inst/n_0_CCCounter[0]_i_2       | CLReceive_S00_AXI_inst/n_0_CCCounter[0]_i_1    |                9 |             33 |
+|  CLK_O_IBUF_BUFG                             |                                                   | CLReceive_S00_AXI_inst/FREQ_CALC/START0        |                9 |             33 |
+| ~CLK_O_IBUF_BUFG                             | CLReceive_S00_AXI_inst/loops1                     | CLReceive_S00_AXI_inst/n_0_CCHighTicks[15]_i_1 |               15 |             40 |
++----------------------------------------------+---------------------------------------------------+------------------------------------------------+------------------+----------------+
+
+

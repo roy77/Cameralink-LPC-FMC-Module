@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4
+# SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Mar  4 21:39:59 2015
+# Process ID: 4408
+# Log file: /root/Cameralink/Vivado/Cameralink.runs/impl_1/design_wrapper.vdi
+# Journal file: /root/Cameralink/Vivado/Cameralink.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_wrapper.tcl -notrace

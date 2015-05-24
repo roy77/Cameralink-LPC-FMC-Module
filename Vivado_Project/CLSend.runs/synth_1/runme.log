@@ -1,0 +1,380 @@
+
+*** Running vivado
+    with args -log CLSend.vds -m32 -mode batch -messageDb vivado.pb -source CLSend.tcl
+
+
+****** Vivado v2014.4
+  **** SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source CLSend.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /root/Cameralink/Vivado/CLSend.cache/wt [current_project]
+# set_property parent.project_path /root/Cameralink/Vivado/CLSend.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths /root/Cameralink/Vivado/CLSend [current_project]
+# read_vhdl -library xil_defaultlib {
+#   /root/Cameralink/Vivado/CLSend/hdl/FreqCalc.vhd
+#   /root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd
+#   /root/Cameralink/Vivado/CLSend/hdl/CLSend.vhd
+# }
+# catch { write_hwdef -file CLSend.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top CLSend -part xc7z020clg484-1
+Command: synth_design -top CLSend -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 601.797 ; gain = 68.250 ; free physical = 632 ; free virtual = 0
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CLSend' [/root/Cameralink/Vivado/CLSend/hdl/CLSend.vhd:67]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'CLSend_S00_AXI' declared at '/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:9' bound to instance 'CLSend_S00_AXI_inst' of component 'CLSend_S00_AXI' [/root/Cameralink/Vivado/CLSend/hdl/CLSend.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'CLSend_S00_AXI__parameterized0' [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:105]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:254]
+INFO: [Synth 8-226] default block is never used [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:407]
+WARNING: [Synth 8-614] signal 'CCCounter' is read in the process but is not in the sensitivity list [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:399]
+WARNING: [Synth 8-614] signal 'S_AXIS_TVALID' is read in the process but is not in the sensitivity list [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:399]
+WARNING: [Synth 8-614] signal 'S_AXIS_ARESETN' is read in the process but is not in the sensitivity list [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:399]
+WARNING: [Synth 8-614] signal 'dataO' is read in the process but is not in the sensitivity list [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:399]
+WARNING: [Synth 8-614] signal 'TEST_I' is read in the process but is not in the sensitivity list [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:399]
+WARNING: [Synth 8-614] signal 'CCCounter' is read in the process but is not in the sensitivity list [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:476]
+WARNING: [Synth 8-614] signal 'S_AXIS_ARESETN' is read in the process but is not in the sensitivity list [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:476]
+INFO: [Synth 8-638] synthesizing module 'FreqCalc' [/root/Cameralink/Vivado/CLSend/hdl/FreqCalc.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'FreqCalc' (1#1) [/root/Cameralink/Vivado/CLSend/hdl/FreqCalc.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'CLSend_S00_AXI__parameterized0' (2#1) [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:105]
+WARNING: [Synth 8-3848] Net TEST_O in module/entity CLSend does not have driver. [/root/Cameralink/Vivado/CLSend/hdl/CLSend.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'CLSend' (3#1) [/root/Cameralink/Vivado/CLSend/hdl/CLSend.vhd:67]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[7]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[6]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[5]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[4]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[3]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[2]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[1]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 628.789 ; gain = 95.242 ; free physical = 604 ; free virtual = 0
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 628.789 ; gain = 95.242 ; free physical = 603 ; free virtual = 0
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 636.789 ; gain = 103.242 ; free physical = 603 ; free virtual = 0
+---------------------------------------------------------------------------------
+ROM "STOP" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+WARNING: [Synth 8-327] inferring latch for variable 'CCCounter_reg' [/root/Cameralink/Vivado/CLSend/hdl/CLSend_S00_AXI.vhd:479]
+WARNING: [Synth 8-3848] Net TEST_O in module/entity CLSend does not have driver. [/root/Cameralink/Vivado/CLSend/hdl/CLSend.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 644.805 ; gain = 111.258 ; free physical = 594 ; free virtual = 0
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               20 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CLSend 
+Detailed RTL Component Info : 
+Module FreqCalc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module CLSend_S00_AXI__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Loading clock regions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from /opt/Xilinx/Vivado/2014.4/data/./parts/xilinx/zynq/IOStandards.xml
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 719.801 ; gain = 186.254 ; free physical = 524 ; free virtual = 0
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "CLSend_S00_AXI_inst/FREQ_CALC/STOP" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[7]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[6]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[5]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[4]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[3]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[2]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[1]
+WARNING: [Synth 8-3331] design CLSend has unconnected port TEST_O[0]
+WARNING: [Synth 8-3917] design CLSend has port DATA_O[27] driven by constant 0
+WARNING: [Synth 8-3917] design CLSend has port s00_axis_tready driven by constant 1
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axi_arprot[0]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axis_tdata[31]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axis_tdata[30]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axis_tdata[29]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axis_tdata[28]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axis_tdata[27]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axis_tdata[26]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axis_tdata[25]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axis_tdata[24]
+WARNING: [Synth 8-3331] design CLSend has unconnected port s00_axis_tlast
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 719.801 ; gain = 186.254 ; free physical = 521 ; free virtual = 0
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 719.801 ; gain = 186.254 ; free physical = 521 ; free virtual = 0
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CLSend_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CLSend_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (\CLSend_S00_AXI_inst/axi_bresp_reg[1] ) is unused and will be removed from module CLSend.
+WARNING: [Synth 8-3332] Sequential element (\CLSend_S00_AXI_inst/axi_bresp_reg[0] ) is unused and will be removed from module CLSend.
+WARNING: [Synth 8-3332] Sequential element (\CLSend_S00_AXI_inst/axi_awaddr_reg[1] ) is unused and will be removed from module CLSend.
+WARNING: [Synth 8-3332] Sequential element (\CLSend_S00_AXI_inst/axi_awaddr_reg[0] ) is unused and will be removed from module CLSend.
+WARNING: [Synth 8-3332] Sequential element (\CLSend_S00_AXI_inst/axi_araddr_reg[1] ) is unused and will be removed from module CLSend.
+WARNING: [Synth 8-3332] Sequential element (\CLSend_S00_AXI_inst/axi_araddr_reg[0] ) is unused and will be removed from module CLSend.
+WARNING: [Synth 8-3332] Sequential element (\CLSend_S00_AXI_inst/axi_rresp_reg[1] ) is unused and will be removed from module CLSend.
+WARNING: [Synth 8-3332] Sequential element (\CLSend_S00_AXI_inst/axi_rresp_reg[0] ) is unused and will be removed from module CLSend.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    29|
+|3     |LUT1   |   116|
+|4     |LUT2   |    21|
+|5     |LUT3   |     5|
+|6     |LUT4   |    14|
+|7     |LUT5   |    43|
+|8     |LUT6   |    94|
+|9     |FDCE   |    52|
+|10    |FDPE   |     2|
+|11    |FDRE   |   136|
+|12    |FDSE   |     3|
+|13    |LD     |    32|
+|14    |IBUF   |    89|
+|15    |OBUF   |    71|
+|16    |OBUFT  |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+-------------------------------+------+
+|      |Instance              |Module                         |Cells |
++------+----------------------+-------------------------------+------+
+|1     |top                   |                               |   719|
+|2     |  CLSend_S00_AXI_inst |CLSend_S00_AXI__parameterized0 |   545|
+|3     |    FREQ_CALC         |FreqCalc                       |   244|
++------+----------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 51 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 732.832 ; gain = 157.031 ; free physical = 508 ; free virtual = 0
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 732.832 ; gain = 199.285 ; free physical = 508 ; free virtual = 0
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 766.840 ; gain = 191.039 ; free physical = 474 ; free virtual = 0
+# write_checkpoint -noxdef CLSend.dcp
+# catch { report_utilization -file CLSend_utilization_synth.rpt -pb CLSend_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 766.840 ; gain = 0.000 ; free physical = 473 ; free virtual = 0
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 23 20:33:45 2015...

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4
+# SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Mar  3 16:21:19 2015
+# Process ID: 18169
+# Log file: /root/Cameralink/Vivado/CLReceive.runs/impl_1/CLReceive.vdi
+# Journal file: /root/Cameralink/Vivado/CLReceive.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source CLReceive.tcl -notrace

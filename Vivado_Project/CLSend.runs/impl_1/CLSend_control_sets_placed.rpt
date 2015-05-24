@@ -1,0 +1,65 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin32) Build 1071353 Tue Nov 18 16:37:30 MST 2014
+| Date         : Mon Feb 23 20:34:11 2015
+| Host         : roy-virtual-machine running 32-bit Ubuntu 14.04.1 LTS
+| Command      : report_control_sets -verbose -file CLSend_control_sets_placed.rpt
+| Design       : CLSend
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    12 |
+| Minimum Number of register sites lost to control set restrictions |    15 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              37 |           18 |
+| No           | No                    | Yes                    |              34 |           10 |
+| No           | Yes                   | No                     |               6 |            3 |
+| Yes          | No                    | No                     |              32 |           13 |
+| Yes          | No                    | Yes                    |              20 |            4 |
+| Yes          | Yes                   | No                     |              96 |           32 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+------------------------------------------------+----------------------------------------+------------------+----------------+
+|       Clock Signal       |                  Enable Signal                 |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++--------------------------+------------------------------------------------+----------------------------------------+------------------+----------------+
+|  s00_axi_aclk_IBUF_BUFG  |                                                |                                        |                3 |              5 |
+|  s00_axi_aclk_IBUF_BUFG  |                                                | CLSend_S00_AXI_inst/FREQ_CALC/SR[0]    |                4 |              7 |
+|  s00_axi_aclk_IBUF_BUFG  | CLSend_S00_AXI_inst/p_1_in[7]                  | CLSend_S00_AXI_inst/FREQ_CALC/SR[0]    |                4 |              8 |
+|  s00_axi_aclk_IBUF_BUFG  | CLSend_S00_AXI_inst/p_1_in[15]                 | CLSend_S00_AXI_inst/FREQ_CALC/SR[0]    |                4 |              8 |
+|  s00_axi_aclk_IBUF_BUFG  | CLSend_S00_AXI_inst/p_1_in[23]                 | CLSend_S00_AXI_inst/FREQ_CALC/SR[0]    |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG  | CLSend_S00_AXI_inst/p_1_in[31]                 | CLSend_S00_AXI_inst/FREQ_CALC/SR[0]    |                3 |              8 |
+|  s00_axi_aclk_IBUF_BUFG  | CLSend_S00_AXI_inst/FREQ_CALC/CLK_Ref_CNT0     | CLSend_S00_AXI_inst/FREQ_CALC/SR[0]    |                4 |             20 |
+|  n_0_137_BUFG            |                                                |                                        |               15 |             32 |
+|  s00_axi_aclk_IBUF_BUFG  | CLSend_S00_AXI_inst/n_2_axi_rdata[31]_i_1      | CLSend_S00_AXI_inst/FREQ_CALC/SR[0]    |               11 |             32 |
+|  s00_axi_aclk_IBUF_BUFG  | CLSend_S00_AXI_inst/FREQ_CALC/CLK_Measure_OUT0 |                                        |               13 |             32 |
+|  s00_axis_aclk_IBUF_BUFG | DATA_O_OBUF[24]                                | CLSend_S00_AXI_inst/n_2_Counter[0]_i_1 |                8 |             32 |
+|  CLK_READ_IBUF_BUFG      |                                                | CLSend_S00_AXI_inst/FREQ_CALC/START0   |                9 |             33 |
++--------------------------+------------------------------------------------+----------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,11 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/opt/Xilinx/Vivado/2013.4/tps/lnx32/jre/lib/i386/server/libjvm.so(+0x67b3a5) [0x9d7663a5]
+/opt/Xilinx/Vivado/2013.4/tps/lnx32/jre/lib/i386/server/libjvm.so(JVM_handle_linux_signal+0x582) [0x9d76c6e2]
+/opt/Xilinx/Vivado/2013.4/tps/lnx32/jre/lib/i386/server/libjvm.so(+0x678426) [0x9d763426]
+[0xb773740c]
+[0x113e5480]
+[0x1008]
+/opt/Xilinx/Vivado/2013.4/lib/lnx32.o/libCOIN-all.so(virtual thunk to stlp_std::basic_ostringstream<char, stlp_std::char_traits<char>, stlp_std::allocator<char> >::~basic_ostringstream()+0) [0xb6a5126c]

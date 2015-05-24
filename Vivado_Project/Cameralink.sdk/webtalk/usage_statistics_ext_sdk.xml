@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<webTalkData  fileName='/root/Cameralink/Vivado/Cameralink.sdk/webtalk/usage_statistics_ext_sdk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Aug 13 13:07:17 2014'>
+<section name="__ROOT__" level="0" order="1" description="">
+ <section name="software_version_and_target_device" level="1" order="1" description="">
+  <keyValuePair key="beta" value="false" description="" />
+  <keyValuePair key="build_version" value="2014.2" description="" />
+  <keyValuePair key="date_generated" value="Wed Aug 13 13:07:04 2014" description="" />
+  <keyValuePair key="os_platform" value="i386" description="" />
+  <keyValuePair key="product_version" value="SDK v2014.2" description="" />
+  <keyValuePair key="project_id" value="2014.2_7" description="" />
+  <keyValuePair key="project_iteration" value="7" description="" />
+  <keyValuePair key="random_id" value="87f0kqk13ot7anv72mhnr71ev2" description="" />
+  <keyValuePair key="registration_id" value="NA" description="" />
+  <keyValuePair key="route_design" value="NA" description="" />
+  <keyValuePair key="target_device" value="NA" description="" />
+  <keyValuePair key="target_family" value="NA" description="" />
+  <keyValuePair key="target_package" value="NA" description="" />
+  <keyValuePair key="target_speed" value="NA" description="" />
+  <keyValuePair key="tool_flow" value="SDK" description="" />
+ </section>
+ <section name="user_environment" level="1" order="2" description="">
+  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-3537U CPU @ 2.00GHz" description="" />
+  <keyValuePair key="cpu_speed" value="2494.336 MHz" description="" />
+  <keyValuePair key="os_name" value="Ubuntu" description="" />
+  <keyValuePair key="os_release" value="Ubuntu 14.04.1 LTS" description="" />
+  <keyValuePair key="system_ram" value="2.000 GB" description="" />
+  <keyValuePair key="total_processors" value="1" description="" />
+ </section>
+ <section name="sdk" level="1" order="3" description="">
+  <section name="bsp/1407927225000" level="2" order="1" description="">
+   <keyValuePair key="apptemplate" value="null" description="" />
+   <keyValuePair key="hwid" value="1407927123000" description="" />
+   <keyValuePair key="os" value="device_tree" description="" />
+   <keyValuePair key="uid" value="1407927225000" description="" />
+  </section>
+  <section name="hardware/1407927123000" level="2" order="2" description="">
+   <keyValuePair key="arch" value="zynq" description="" />
+   <keyValuePair key="device" value="7z020" description="" />
+   <keyValuePair key="ishandoff" value="true" description="" />
+   <keyValuePair key="iszynq" value="true" description="" />
+   <keyValuePair key="processors" value="2" description="" />
+   <keyValuePair key="uid" value="1407927123000" description="" />
+   <keyValuePair key="vivadoversion" value="2014.2" description="" />
+  </section>
+ </section>
+ <section name="vivado_usage" level="1" order="4" description="">
+ </section>
+</section>
+</webTalkData>

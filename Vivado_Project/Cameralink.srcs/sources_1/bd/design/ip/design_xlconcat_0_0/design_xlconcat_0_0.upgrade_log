@@ -1,0 +1,37 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin32) Build 1071353 Tue Nov 18 16:37:30 MST 2014
+| Date         : Wed Dec 10 13:05:54 2014
+| Host         : roy-virtual-machine running 32-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_xlconcat_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_xlconcat_0_0 (xilinx.com:ip:xlconcat:2.1) to (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3 (lin32) Build 1034051 Fri Oct  3 16:34:07 MDT 2014
+| Date         : Sat Oct 18 13:31:52 2014
+| Host         : roy-virtual-machine running 32-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_xlconcat_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_xlconcat_0_0 (xilinx.com:ip:xlconcat:2.1) to current project options.
+

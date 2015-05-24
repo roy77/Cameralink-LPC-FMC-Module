@@ -1,0 +1,152 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3 (lin32) Build 1034051 Fri Oct  3 16:34:07 MDT 2014
+| Date         : Sat Oct 18 12:54:14 2014
+| Host         : roy-virtual-machine running 32-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_axi_dma_2_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_axi_dma_2_1 (xilinx.com:ip:axi_dma:7.1) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (lin32) Build 932637 Wed Jun 11 13:12:44 MDT 2014
+| Date         : Mon Aug 11 22:10:28 2014
+| Host         : roy-virtual-machine running 32-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_axi_dma_2_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_axi_dma_2_1 (xilinx.com:ip:axi_dma:7.1) from (Rev. 1) to (Rev. 3)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+WARNING: Attempt to set value '64' on disabled parameter 'c_m_axi_mm2s_data_width' is ignored for '/axi_dma_2'
+
+WARNING: Attempt to set value '8' on disabled parameter 'c_mm2s_burst_size' is ignored for '/axi_dma_2'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_dma:7.1 -user_name design_axi_dma_2_1
+set_property -dict "\
+  CONFIG.c_m_axis_mm2s_tdata_width 32 \
+  CONFIG.c_num_s2mm_channels 1 \
+  CONFIG.c_prmry_is_aclk_async 0 \
+  CONFIG.c_include_mm2s_dre 0 \
+  CONFIG.c_sg_use_stsapp_length 0 \
+  CONFIG.c_include_mm2s 0 \
+  CONFIG.c_s_axis_s2mm_tdata_width 32 \
+  CONFIG.c_dlytmr_resolution 125 \
+  CONFIG.c_enable_multi_channel 0 \
+  CONFIG.c_micro_dma 0 \
+  CONFIG.c_s2mm_burst_size 16 \
+  CONFIG.Component_Name axi_dma_test \
+  CONFIG.c_m_axi_s2mm_data_width 32 \
+  CONFIG.c_include_sg 0 \
+  CONFIG.c_mm2s_burst_size 8 \
+  CONFIG.c_include_s2mm_dre 0 \
+  CONFIG.c_include_s2mm 1 \
+  CONFIG.c_m_axi_mm2s_data_width 64 \
+  CONFIG.c_include_s2mm_sf 0 \
+  CONFIG.c_sg_include_stscntrl_strm 0 \
+  CONFIG.c_num_mm2s_channels 1 \
+  CONFIG.c_sg_length_width 14 \
+  CONFIG.c_include_mm2s_sf 1 " [get_ips design_axi_dma_2_1]
+
+
+
+
+
+
+
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (lin32) Build 353583 Mon Dec  9 17:25:33 MST 2013
+| Date         : Wed Jan 22 19:41:31 2014
+| Host         : roy-virtual-machine running 32-bit Ubuntu 13.04
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_axi_dma_2_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_axi_dma_2_1 from xilinx.com:ip:axi_dma:7.0 (Rev. 1) to xilinx.com:ip:axi_dma:7.1 (Rev. 1)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Upgrade messages
+-------------------
+
+Removed parameter c_sg_include_desc_queue
+
+3. Customization warnings
+-------------------------
+
+WARNING: Attempt to set value 'design_axi_dma_2_1' on disabled parameter 'Component_Name' is ignored for 'design_axi_dma_2_1'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_dma:7.1 -user_name design_axi_dma_2_1
+set_property -dict "\
+  CONFIG.c_m_axis_mm2s_tdata_width 64 \
+  CONFIG.c_include_s2mm_dre 0 \
+  CONFIG.c_sg_include_stscntrl_strm 0 \
+  CONFIG.c_num_s2mm_channels 1 \
+  CONFIG.c_include_mm2s_dre 0 \
+  CONFIG.c_prmry_is_aclk_async 0 \
+  CONFIG.c_num_mm2s_channels 1 \
+  CONFIG.c_include_s2mm 0 \
+  CONFIG.c_sg_use_stsapp_length 0 \
+  CONFIG.c_sg_length_width 14 \
+  CONFIG.c_include_mm2s 1 \
+  CONFIG.c_s_axis_s2mm_tdata_width 32 \
+  CONFIG.c_m_axi_s2mm_data_width 32 \
+  CONFIG.c_dlytmr_resolution 125 \
+  CONFIG.c_enable_multi_channel 0 \
+  CONFIG.c_m_axi_mm2s_data_width 64 \
+  CONFIG.c_s2mm_burst_size 16 \
+  CONFIG.Component_Name design_axi_dma_2_1 \
+  CONFIG.c_include_sg 0 \
+  CONFIG.c_mm2s_burst_size 8 \
+  CONFIG.c_include_s2mm_sf 0 \
+  CONFIG.c_include_mm2s_sf 1 " [get_ips design_axi_dma_2_1]
+
+

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:12:44 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sat Aug 16 00:09:18 2014
+# Process ID: 9378
+# Log file: /root/Cameralink/Vivado/Cameralink.runs/synth_1/design_wrapper.vds
+# Journal file: /root/Cameralink/Vivado/Cameralink.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_wrapper.tcl
